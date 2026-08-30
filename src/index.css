@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-poppins: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-jakarta: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-jakarta);
+    color: #121214;
+    background-color: #FAFAF8;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-poppins);
+  }
+}
+
+.font-display {
+  font-family: var(--font-poppins);
+}
+
+.font-body {
+  font-family: var(--font-jakarta);
+}
+
+/* Subtle Technical Dot Grid */
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-faint {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-grid-dark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Atmospheric Glows inspired by Pulze reference */
+.glow-atmosphere-hero {
+  background: radial-gradient(55% 45% at 50% 45%, rgba(235, 0, 40, 0.045) 0%, rgba(245, 158, 11, 0.035) 40%, rgba(59, 130, 246, 0.03) 70%, transparent 100%);
+}
+
+.glow-atmosphere-warm {
+  background: radial-gradient(60% 50% at 50% 50%, rgba(235, 0, 40, 0.03) 0%, rgba(243, 244, 246, 0.4) 60%, transparent 100%);
+}
+
+.glow-atmosphere-cta {
+  background: radial-gradient(60% 60% at 50% 50%, rgba(235, 0, 40, 0.06) 0%, rgba(217, 70, 239, 0.02) 40%, transparent 90%);
+}
+
+/* Hide scrollbar for clean horizontal scrolls if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

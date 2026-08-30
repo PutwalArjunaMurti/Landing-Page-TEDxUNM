@@ -1,0 +1,6 @@
+{
+  "name": "TEDxUNM 2026",
+  "description": "The official editorial website for TEDxUniversitas Negeri Makassar 2026 — The Art of Human Language.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
